@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { AnalyticsMock, DashboardMock, EtaCard, TrackingPreview } from '../components/Mocks'
 import { Head, Icon, ICONS } from '../components/ui'
+import { Logo } from '../components/Logo'
 
 const problems = ['Limited visibility into shipment locations', 'Difficulty tracking multiple carriers', 'Unexpected delivery delays', 'Poor communication between logistics partners', 'Manual shipment updates', 'Limited visibility into delivery performance', 'Difficulty keeping customers informed', 'Disconnected shipment records and documents']
 export const features: [string, string, string][] = [
@@ -21,6 +22,9 @@ export default function Home() {
       <section className="relative overflow-hidden bg-navy text-white">
         <div className="container-x pb-16 pt-14 sm:pt-20">
           <div className="mx-auto max-w-3xl text-center rise">
+            <div className="mx-auto mb-8 inline-flex items-center rounded-3xl bg-white px-6 py-4 shadow-lift ring-1 ring-white/20 sm:px-10 sm:py-6">
+              <span className="sm:hidden"><Logo size="md" /></span><span className="hidden sm:inline"><Logo size="lg" /></span>
+            </div>
             <div className="eyebrow !text-teal">Shipment visibility and logistics intelligence</div>
             <h1 className="mt-4 text-4xl font-extrabold leading-[1.1] sm:text-6xl">Know Where Every Shipment Stands.</h1>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">Shipment AI brings your logistics operations into one intelligent platform. Track shipments, anticipate delays, coordinate carriers, and keep customers informed from dispatch to delivery.</p>

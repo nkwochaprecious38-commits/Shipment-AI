@@ -7,7 +7,7 @@ export function AuthShell({ title, sub, children }: { title: string; sub: string
   return (
     <div className="grid min-h-screen lg:grid-cols-2">
       <div className="hidden bg-navy p-12 text-white lg:flex lg:flex-col lg:justify-between">
-        <Link to="/"><Logo light /></Link>
+        <Link to="/"><Logo light size="lg" /></Link>
         <div><h2 className="max-w-md text-4xl font-extrabold leading-tight">Know Where Every Shipment Stands.</h2>
           <p className="mt-4 max-w-md text-white/70">Track shipments, anticipate delays, coordinate carriers and keep customers informed from dispatch to delivery.</p></div>
         <div className="text-sm text-white/50">© 2026 Shipment AI</div>

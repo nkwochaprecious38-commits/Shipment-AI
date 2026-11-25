@@ -11,7 +11,7 @@ export default function Nav() {
   const cls = ({ isActive }: { isActive: boolean }) => `text-sm font-semibold transition ${isActive ? 'text-ocean' : 'text-navy hover:text-ocean'}`
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur">
-      <div className="container-x flex h-16 items-center justify-between">
+      <div className="container-x flex h-[72px] items-center justify-between">
         <Link to="/" aria-label="Shipment AI home" onClick={() => setOpen(false)}><Logo /></Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Main">
           {links.map(([t, p]) => <NavLink key={p} to={p} className={cls}>{t}</NavLink>)}
